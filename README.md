@@ -1,2 +1,5 @@
-# m6-hw9-matthews-renesha
-Created a proof of concept (POC) for a weather widget. This assignment practices the use of APIs.
+## Issues
+
+## Resources
+https://www.w3schools.com/tags/tag_input.asp
+
