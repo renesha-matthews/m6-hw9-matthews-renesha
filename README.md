@@ -1,20 +1,20 @@
 ## Issues
-URL didn't work
+Provided URL for Open Weather didn't work without adding https:// in the beginning.
 
 ## Resources
-https://www.w3schools.com/tags/tag_input.asp
+* [Input Tag](https://www.w3schools.com/tags/tag_input.asp)
 
-https://webgradients.com/
+* [Web Gradients](https://webgradients.com/)
 
-https://css-tricks.com/almanac/properties/t/text-transform/
+* [CSS Text Transform](https://css-tricks.com/almanac/properties/t/text-transform/)
 
-https://openweathermap.org/weather-conditions
+* [Open Weather Icons](https://openweathermap.org/weather-conditions)
 
-http://gdichicago.com/courses/gdi-featured-js-intro/homework.html
+* [Code for Degree Symbol](http://gdichicago.com/courses/gdi-featured-js-intro/homework.html)
 
-https://coderrocketfuel.com/article/convert-a-unix-timestamp-to-a-date-in-vanilla-javascript
+* [Convert Unix Timestamp to Date](https://coderrocketfuel.com/article/convert-a-unix-timestamp-to-a-date-in-vanilla-javascript)
 
-https://stackoverflow.com/questions/24086741/remove-seconds-from-tolocaletimestring
+* [Remove Seconds from toLocaleTimeString](https://stackoverflow.com/questions/24086741/remove-seconds-from-tolocaletimestring)
 
 
 

@@ -8,13 +8,14 @@ formEl.onsubmit = function(e) {
 
     var query = inputEl.value
 
+    if(!query) return
+
     fetch('https://api.openweathermap.org/data/2.5/weather?appid=3af40a75938c30c0cc046280656f91a1&units=imperial&q=' + query)
         .then(function(response) {
             return response.json()
         })
 
         .then(function(result) {
-            console.log(result)
             weatherInfo(result)
             inputEl.value = " "
         })
@@ -26,6 +27,7 @@ formEl.onsubmit = function(e) {
 
 function weatherInfo(weatherObj) {
     weatherEl.innerHTML = " "
+
 
     // city name
     var city = document.createElement('h2')
