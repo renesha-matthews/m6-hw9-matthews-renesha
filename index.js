@@ -36,8 +36,7 @@ function weatherInfo(weatherObj) {
     // icon image for current weather conditions
     var icon = document.createElement('img')
     icon.src = "http://openweathermap.org/img/wn/" + weatherObj.weather[0].icon + "@2x.png"
-    icon.alt = "An icon of current weather condition"
-    icon.width = 250
+    icon.alt = "An icon of the current weather condition"
     weatherEl.appendChild(icon)
 
     // description of current weather
@@ -46,13 +45,13 @@ function weatherInfo(weatherObj) {
     currentWeather.style = "font-size: 30px; color: rgb(251, 248, 248); text-transform: capitalize; padding-bottom: 20px;"
     weatherEl.appendChild(currentWeather)
 
-    // current temperature
+    // current temperature in degrees fahrenheit
     var currentTemp = document.createElement('p')
     currentTemp.textContent = "Current: " + weatherObj.main.temp + '\u00B0 F'
     currentTemp.style = "font-size: 30px; color: rgb(251, 248, 248);"
     weatherEl.appendChild(currentTemp)
 
-    // current "feels like" temperature
+    // current "feels like" temperature in degrees fahrenheit
     var feelsLike = document.createElement('p')
     feelsLike.textContent = "Feels like: " + weatherObj.main.feels_like + '\u00B0 F'
     feelsLike.style = "font-size: 30px; color: rgb(251, 248, 248); padding-bottom: 20px;"
@@ -60,7 +59,8 @@ function weatherInfo(weatherObj) {
 
     // last updated
     var timeUpdate = document.createElement('p')
-    timeUpdate.textContent = "Last updated: " + weatherObj.dt
-    timeUpdate.style = "font-size: 30px; color: rgb(251, 248, 248); padding-bottom: 20px;"
+    var timeStamp = new Date(weatherObj.dt * 1000)
+    timeUpdate.textContent = "Last updated: " + timeStamp.toLocaleTimeString(navigator.language, {hour: '2-digit', minute: '2-digit'})
+    timeUpdate.style = "font-size: 25px; color: rgb(251, 248, 248); padding-bottom: 20px;"
     weatherEl.appendChild(timeUpdate)
 }
