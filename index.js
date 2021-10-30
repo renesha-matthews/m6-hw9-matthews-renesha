@@ -28,7 +28,6 @@ formEl.onsubmit = function(e) {
 function weatherInfo(weatherObj) {
     weatherEl.innerHTML = " "
 
-
     // city name
     var city = document.createElement('h2')
     city.textContent = weatherObj.name + ", " + weatherObj.sys.country
